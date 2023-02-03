@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LEVELS } from '../../models/level.enum.js';
+import { LEVELS } from '../../models/level.enum';
 import { Task } from '../../models/tasks.class'
 import TaskComponent from '../pure/task';
 
@@ -28,9 +28,31 @@ const TaskListComponent = () => {
     }, [tasks])
 
 
-    const changeCompleted = (id) => {
-        console.log('TODO: Cambiar estado de una tarea')
+    function completeTask(task){
+        console.log('Complete this Task:', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks[index].completed = !tempTasks[index].completed;
+        // We update the state of the component with the new list of tasks and it will update the
+        // Iteration of the tasks in order to show the task updated
+        setTasks(tempTasks);
     }
+
+    function deleteTask(task){
+        console.log('Detele this Task:', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks.splice(index,1);
+        setTasks(tempTasks);
+    }
+
+    function addTask(task){
+        console.log('Detele this Task:', task);
+        const tempTasks = [...tasks];
+        tempTasks.push(task);
+        setTasks(tempTasks);
+    }
+
 
     return (
         <div>
@@ -58,7 +80,10 @@ const TaskListComponent = () => {
                                     return (
                                             <TaskComponent 
                                                 key={index} 
-                                                task={task}>
+                                                task={task}
+                                                complete={completeTask}
+                                                remove = {deleteTask}
+                                            >
                                             </TaskComponent>
                                         )
                                     }
@@ -66,16 +91,14 @@ const TaskListComponent = () => {
                             </tbody>
                         </table>
                     </div>
-                    <Taskform></Taskform>
                 </div>
-
             </div>
-           
-            {/* <TaskComponent task={defaultTask}></TaskComponent> */}
+            <Taskform add={addTask}></Taskform>
         </div>
     );
 };
 
 
 export default TaskListComponent;
+
 

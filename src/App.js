@@ -18,7 +18,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <Greeting name="Juanma"></Greeting> */}
         {/* <GreetingF name="Juanma"></GreetingF> */}
-        {/* <TaskListComponent></TaskListComponent> */}
+        <TaskListComponent></TaskListComponent>
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
@@ -29,7 +29,7 @@ function App() {
         </Ejemplo4> */}
         {/* <LifeCycleExample></LifeCycleExample> */}
         {/* <Greetingstyled name="Juanma"></Greetingstyled> */}
-        <Father></Father>
+        {/* <Father></Father> */}
       {/* </header> */}
     </div>
   );
