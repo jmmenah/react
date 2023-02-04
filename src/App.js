@@ -10,6 +10,7 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import LifeCycleExample from './components/pure/lifeCycleExample';
 import Greetingstyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
+import Optionalrender from './components/pure/opcionalRender';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <Greeting name="Juanma"></Greeting> */}
         {/* <GreetingF name="Juanma"></GreetingF> */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
@@ -30,6 +31,7 @@ function App() {
         {/* <LifeCycleExample></LifeCycleExample> */}
         {/* <Greetingstyled name="Juanma"></Greetingstyled> */}
         {/* <Father></Father> */}
+        <Optionalrender></Optionalrender>
       {/* </header> */}
     </div>
   );
