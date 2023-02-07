@@ -11,28 +11,44 @@ import LifeCycleExample from './components/pure/lifeCycleExample';
 import Greetingstyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import Optionalrender from './components/pure/opcionalRender';
+import Registerformik from './components/pure/forms/registerFormik';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <Greeting name="Juanma"></Greeting> */}
-        {/* <GreetingF name="Juanma"></GreetingF> */}
+      {/* <header className="App-header"> */}
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        {/* Componente propio Greeting.jsx */}
+        {/* <Greeting name={"Martín"}></Greeting> */}
+        {/* Componente de ejemplo funcional */}
+        {/* <Greetingf name="Martín"></Greetingf> */}
+        {/* Componente de Listado de Tareas */}
         {/* <TaskListComponent></TaskListComponent> */}
+        {/* Ejemplos de uso de HOOKS */}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
-        {/* <Ejemplo4 nombre="Martin">
+        {/* Todo loq ue hay aquí, es tratado como props.children */}
+        {/* <Ejemplo4 nombre="Martín">
           <h3>
             Contenido del props.children
           </h3>
         </Ejemplo4> */}
-        {/* <LifeCycleExample></LifeCycleExample> */}
-        {/* <Greetingstyled name="Juanma"></Greetingstyled> */}
-        {/* <Father></Father> */}
-        <Optionalrender></Optionalrender>
+        {/* <Greetingstyled name="Martín"></Greetingstyled> */}
       {/* </header> */}
+      {/* Gestión de eventos */}
+      {/* <Father></Father> */}
+
+      {/* Ejemplos de Renderizado condicional */}
+      {/* <Optionalrender></Optionalrender> */}
+
+      {/* Ejemplos de uso de Formik y Yup */}
+      {/* <Loginformik></Loginformik> */}
+      <Registerformik></Registerformik>
+
+      {/* PROYECTO FINAL */}
+      {/* <TaskListComponent></TaskListComponent> */}
+
     </div>
   );
 }
