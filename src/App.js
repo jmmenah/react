@@ -1,17 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import Greeting from './components/pure/greeting';
-import GreetingF from './components/pure/greetingF';
+import Greetingf from './components/pure/greetingF';
 import TaskListComponent from './components/container/task_list';
 import Ejemplo1 from './hooks/Ejemplo1';
 import Ejemplo2 from './hooks/Ejemplo2';
-import MiComponenteConContexto from './hooks/Ejemplo3';
+import MiComponenteConContexto from './hooks/Ejemplo3'
 import Ejemplo4 from './hooks/Ejemplo4';
-import LifeCycleExample from './components/pure/lifeCycleExample';
 import Greetingstyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import Optionalrender from './components/pure/opcionalRender';
+import Loginformik from './components/pure/forms/loginFormik';
 import Registerformik from './components/pure/forms/registerFormik';
+import Asyncexample from './components/pure/AsyncExample';
+import Observableexample from './components/pure/ObservableExample';
+import Fetchexample from './components/pure/FechExample';
 
 function App() {
   return (
@@ -44,11 +47,15 @@ function App() {
 
       {/* Ejemplos de uso de Formik y Yup */}
       {/* <Loginformik></Loginformik> */}
-      <Registerformik></Registerformik>
+      {/* <Registerformik></Registerformik> */}
+
+      {/* Ejemplos De procesos asínrconos */}
+      {/* <Asyncexample></Asyncexample> */}
+      {/* <Observableexample></Observableexample> */}
+      <Fetchexample></Fetchexample>
 
       {/* PROYECTO FINAL */}
       {/* <TaskListComponent></TaskListComponent> */}
-
     </div>
   );
 }

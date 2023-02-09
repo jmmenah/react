@@ -7,8 +7,8 @@ const Ejemplo1 = () => {
 
     //Valor inicial para una persona
     const personaInicial = {
-        nombre: "Martin",
-        email: "martin@prueba.com"
+        nombre: "Juanma",
+        email: "juanma@prueba.com"
     };
 
     const [contador,setContador] = useState(valorInicial);
